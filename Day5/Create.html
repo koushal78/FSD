@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="add()"> Add Element</button>
+    <button id="h1" onclick="add1()"> Add1 Element</button>
+    
+    <script>
+        const add = ()=>{
+            let h1 = document.createElement('h1')
+            let b =  document.querySelector('body')
+            h1.textContent = 'hi i am heading'
+                b.appendChild(h1)
+                h1.style.backgroundColor = 'red'
+                
+        }
+        let h1 = document.querySelector('#h1')
+        h1.addEventListener('click',()=>{
+            alert('hello world')
+        })
+
+    </script>
+</body>
+</html>
